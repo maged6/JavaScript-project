@@ -1,0 +1,288 @@
+body{
+  margin: 0 ;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+}
+#sec2 ,  #sec3 , #sec4 {
+  background-color: #FBFCFC  ;
+  padding-top: 150px;
+}
+
+     /* section one  */
+
+.secPic {
+
+ background: url(1.jpg);
+ position: relative;
+  color:  white ;
+  height: 500px ;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-size: 100% ;
+
+}
+
+.pic1{
+background: linear-gradient(to right , black  , #7FB3D5  );
+width: 100% ;
+height:  100% ;
+opacity: 0.6;
+position: absolute;
+
+
+}
+.picText {
+  position: absolute;
+  top : 50px ;
+  left : 60px ;
+
+  font-size: 40px ;
+  text-align: left;
+  z-index: 1 ;
+
+}
+.flex-container {
+  display: flex;
+    font-size: 30px;
+    padding-top:1%;
+    background-color: white;
+    position: relative;
+    flex-direction: row;
+    align-items: stretch;
+
+}
+.flex{
+  flex-grow: 4;
+  text-align: center;
+  color: gray;
+  text-decoration: none;
+}
+
+.heading {
+    color: blue;
+    border-bottom: 2.5px solid blue;
+    height: 50px ;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+}
+
+
+
+     /* section two  */
+
+     .thSection2{
+       color:#342526;
+       text-align: left;
+       font-size: 30px;
+       margin:0px  20px ;
+
+     }
+
+     .linex{
+        /* #FBFCFC  */
+       background-color:  #FBFCFC ;
+       width: 100%;
+       height: 50px;
+
+
+     }
+
+.sectionTwo{
+  display: flex;
+   justify-content: center ;
+   flex-wrap:  wrap-reverse;
+   padding: 2% 1%;
+}
+.sectiontwoBox{
+  color:  #800000;
+   text-align: left;
+   font-size: 100%;
+}
+.tableSection2{
+  border-collapse: separate;
+border-spacing: 0 36px;
+margin-left: 20px;
+}
+.imgsectionTwo{
+    border-radius: 10px;
+}
+     /* section three  */
+
+ .thSection3{
+       color:#342526;
+       text-align: left;
+       font-size: 60px ;
+       margin:40px  30px ;
+
+     }
+.bulletsForms{
+     display:none;
+     }
+
+.activeBllForms{
+       display: grid;
+       font-size: 25px;
+       color: black ;
+     }
+
+.ownForms{
+    font-size: 50px;
+    margin: 1px ;
+    color: blue ;
+}
+.ulcode{
+  margin: 0%  5%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+li {
+  display: flex;
+  flex-flow: row;
+  min-height: 100px;
+  position: relative;
+}
+span.number {
+  margin-right: 20px;
+  margin-top: 20px ;
+  text-align: center;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: gray;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+span.line {
+  position: absolute;
+  height: 100%;
+  border: solid #DDDDDD 1px;
+  top: 1.5em;
+  left: 0.2em;
+}
+li:last-child span.line {
+  display: none;
+}
+
+
+
+     /* section four  */
+.carousel {
+  margin:  5% 10%;
+
+}
+.d-block{
+  height: 500px;
+  width: 400px;
+  border-radius: 30px;
+
+}
+.titelsec3{
+  color:#342526;
+  text-align: center;
+  font-size: 80px  ;
+
+}
+.copyright{
+  background-color: black;
+  color : white ;
+  display: flex;
+  justify-content:space-between;
+    height: 30px ;
+    margin-top:  20px   ;
+    padding: 0 40px ;
+    font-size: 15px;
+
+}
+.help{
+    padding: 0 20px ;
+    text-decoration: underline;
+}
+
+
+
+/* mobil and tablet size */
+
+
+
+
+@media screen and (max-width : 1000px)
+{
+  .sectiontwoBox{
+    color:  #800000;
+     text-align: left;
+     font-size: 130%;
+     width: 80%;
+     margin: 0% 10% ;
+  }
+
+
+}
+
+  @media screen and (max-width : 768px)
+  {
+    .picText {
+      font-size: 30px ;
+      top  : 100px;
+    }
+    .secPic {
+      height: 430px ;
+    }
+    .d-block{
+      height: 430px;
+
+    }
+    .titelsec3{
+      font-size: 50px  ;
+    }
+  }
+
+  @media screen and (max-width :  665px)
+  {
+
+    #sec2 ,  #sec3 , #sec4 {
+      background-color: #FBFCFC  ;
+      padding-top: 0px;
+    }
+    .picText {
+      font-size: 30px ;
+      top  : 80px;
+    }
+    .secPic {
+      height: 370px ;
+    }
+    .sectiontwoBox{
+
+       font-size: 100%;
+       width: 100%;
+       margin: 0% 10% ;
+    }
+
+    .d-block{
+      height: 300px;
+      width: 100px;
+
+    }
+    .titelsec3{
+      font-size: 30px  ;
+    }
+    .copyright{
+        font-size: 8px ;
+        padding: 0 20px ;
+        height: 20px ;
+    }
+    .help{
+        padding: 0 2px ;
+    }
+  }

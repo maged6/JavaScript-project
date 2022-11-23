@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {
+  list-style-position: outside;
+  border-left : 1.5px solid gray;
+  padding-left : 12px ;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<ul class="a">
+  <li>1779</li>
+  <li>1789</li>
+  <li>1778</li>
+  <li>1820</li>
+  <li>1830</li>
+</ul>
+
+
+</body>
+</html>
